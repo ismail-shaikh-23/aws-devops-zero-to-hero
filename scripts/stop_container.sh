@@ -1,5 +1,5 @@
 #!/bin/bash
 set -e
 
-# Stop the running container (if any)
-echo "Hi"
+CONTAINERID=$(docker ps -q)
+docker rm -f $CONTAINERID
